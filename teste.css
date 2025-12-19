@@ -2,47 +2,53 @@ body{
     width: 100%;
     height: 100%;
     margin: 0px;
-    
     padding: 0px;
 }
 
 /*  primeira caixa foto de perfil*/
-#box{
+#container-box{
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 5px;
-    gap: 13px;
+    padding: 10px;
+    gap: 19px;
+    font-size: 13px;
+    font-family: "Open Sans", sans-serif;
 }
 
 /* tamanho da foto de perfill */
-#png{
-    width: 50px;
-    border: 1px solid black;
+#img-png{
+    width: 30px;
+    border: 3px solid rgba(217, 217, 217, 0.741);
     border-radius: 360px;
+    padding: 1px;
+    cursor: pointer;
 }
 
+#img-png:hover{
+    box-shadow: 0px 0px 2px 0px;
+}
 /* cor do link*/
-.zone{
-    color: black;
+.container-link{
     text-decoration: none;
-    
+    color: rgb(73, 73, 73);
+    font-family: ;
 }
 
 /* passar do mouse nos link*/
-.zone:hover{
+.container-link:hover{
     text-decoration: underline;
 }
 
 /*a maior caixa do mundo*/
-#dimension{
+#container-center{
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
 
 /*img do google*/
-#dimension1d{
+#container-top{
     display: flex;
     justify-content: center;
 }
@@ -53,20 +59,27 @@ body{
 }
 
 /*organizaçao da barra de navegaçao*/
-#dimension2dvd{
+#container-navegacao{
     display: flex;
-    justify-content: center; 
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    height: 90px;
 }
 
-#dimension2d{
+#container-navbar{
     display: flex;
-    width: 45%;
+    width: 58cap;
     justify-content: center;
-    border: 1px solid black;
-    border-radius: 20px ;
-    height: 40px;
+    border: 1px solid rgba(198, 198, 198, 0.679);
+    border-radius: 28px ;
+    height: 46px;
     padding: 2px 8px;
+    box-shadow: 0px 3px 6px 0px rgba(232, 232, 232, 0.609);
+}
 
+#container-navbar:hover{
+    box-shadow: 0px 1px 7px 2px rgba(201, 201, 201, 0.679);
 }
 
 #icones{
@@ -77,42 +90,39 @@ body{
     cursor: pointer;
 }
 
-
 #icones svg{
     width: 23px;
 }
+
 #icones-ia{
     display: flex;
-    border: 1px solid rgb(169, 168, 168);
+    background:  rgba(244, 244, 244, 0.979);
     border-radius: 100px;
-    width: 100px;
-    height: 30px;
+    width: 94px;
+    height: 28px;
     align-items: center;
 }
 
 #icones-ia:hover{
-    border-width: px;
+    border: 1px solid;
     border-right-color: red;
     border-bottom-color: rgb(0, 128, 2);
     border-top-color: orange;
     border-left-color: blue;
-    transition: 0.5s;
-    box-shadow: 1px 1px 0px px rgba(210, 210, 210, 0.679);
+ 
+    box-shadow: 1px 1px 0px rgba(210, 210, 210, 0.679);
 }
-
-
 
 /*barra de navegaçao*/
 #navegador{
-    width: 80%;
-    border-radius: 20px;
+    width: 82%;
+    border-radius: 25px;
     outline: none;
     border: none;
-    
 }
 
 /*organizaçao dos botoes*/
-#dimension3d{
+#container-button{
     display: flex;
     justify-content: center;
     padding: 20px;
@@ -120,7 +130,7 @@ body{
 }
 
 /*botoes*/
-.mega-zord{
+.container-buttons{
     border: none;
     border-radius: 6px;
     display: flex;
@@ -129,40 +139,52 @@ body{
    background-color: rgba(244, 244, 244, 0.979);
 }
 
-.mega-zord:hover{
+.container-buttons:hover{
     background: rgb(240, 240, 240);
     box-shadow: 1px 2px 0px 0px rgb(218, 218, 218);
     border: 1px solid rgb(230, 230, 230);
 }
 
 
-#multiverse{
+#container-end{
     display: flex;
     flex-direction: column;
     justify-content: end;
-    height: 308px;
-    
-
+    height: 230px;
 }
-#head-zord{
-    
-    padding: 10px;
-    background: rgba(210, 210, 210, 0.679);
+#container-country{  
+    background: rgba(244, 244, 244, 0.866);
     padding: 20px;
+    color: rgb(52, 52, 52);
 }
-#dody-zord{
+
+#container-infos{
     display: flex;
     justify-content: space-between;
-    background: rgba(210, 210, 210, 0.679);
+    background: rgba(244, 244, 244, 0.866);
     padding: 10px;
-    
+    gap: 40px;
+    align-items: center;
 }
 
-#bone-zord{
+#contsiner-information{
     display: flex;
     gap: 40px;
 }
-#blod-zord{
+#container-information2{
     display: flex;
     gap: 40px;
+    align-items: center;
+}
+
+#container-apps{
+    width: 25px;
+    cursor: pointer;
+}
+
+#plus{
+    width: 35px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
 }
