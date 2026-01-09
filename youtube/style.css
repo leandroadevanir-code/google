@@ -1,0 +1,169 @@
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0%;
+    padding: 0%;
+}
+
+#container-start{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px;
+    
+}
+
+#navs-creates{
+    display: none;
+    
+
+    & ul{
+        list-style-type: none;
+    }
+    
+}
+
+#navs-creates.ativo{
+    display: block;
+}
+#container-navs{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 10px;
+    justify-content: start;
+}
+#container-nav{
+    display: none;
+
+    & ul{
+        list-style-type: none;
+    }
+}
+
+#container-nav.ativo{
+    display: block;
+}
+
+#container-button{
+    border: none;
+    background: transparent;
+    width: 60px;
+}
+
+
+#container-search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+#container-input{
+    border: 1px solid rgb(206, 206, 206);
+    border-radius: 30px;
+    width: 600px;
+    height: 15px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+#input{
+    border: none;
+    background: transparent;
+    border-radius: 30px;
+    width: 100%;
+
+    outline: none;
+}
+
+
+
+#container-large{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+#perfil{
+    width: 50px;
+    height: 50px;
+    border: 1px solid;
+    border-radius: 50%; 
+}
+
+#perfil:hover{
+        box-shadow: 0px 1px 3px 3px rgba(187, 187, 187, 0.856);
+        cursor: pointer;
+}
+
+
+#container-creates{
+    display: flex;
+    align-items: center;
+    width: 80px;
+    padding: 20px;
+    border-radius: 100px;
+    height: 20px;
+    cursor: pointer;
+    border: none;
+}
+
+
+#container-midi{
+    display: flex;
+    gap: 20px;
+}
+
+#container-opctions{
+    display: flex;
+    flex-direction: column;
+    width: 40px;
+    padding: 5px;
+    gap: 20px;
+    margin: 15px;
+
+    & button{
+        width: 40px;
+        border: none;
+        background: transparent;
+
+
+        & a{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            font-size: 10px;
+            text-decoration: none;
+            color: black;
+        }
+    }
+}
+
+#container-small{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+   & #my-list{
+    display: flex;
+    cursor: pointer;
+    gap: 20px;
+    list-style-type: none;
+
+        & button{
+            display: flex;
+            align-items: center;
+            border: none;
+            padding: 15px;
+            height: 27px;
+            border-radius: 7px;
+        }
+    }
+
+    
+    & img{
+        border-radius: 10px;
+    }
+}
+
